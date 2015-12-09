@@ -1,5 +1,7 @@
 package com.example.reubenpinto2k15.statusapp;
 
+import android.util.Log;
+
 import java.io.InputStream;
 import java.io.OutputStream;
 
@@ -19,6 +21,8 @@ public class Utils {
                 os.write(bytes, 0, count);
             }
         }
-        catch(Exception ex){}
+        catch(Exception ex){
+            Log.d("Statusapp", ex.getLocalizedMessage());
+        }
     }
 }

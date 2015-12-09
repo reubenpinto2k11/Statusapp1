@@ -66,7 +66,7 @@ public class ImageLoader {
 
 
         try {
-            Bitmap bitmap=null;
+            Bitmap bitmap;
             URL imageUrl = new URL(url);
             HttpURLConnection conn = (HttpURLConnection)imageUrl.openConnection();
             conn.setConnectTimeout(30000);
@@ -116,6 +116,7 @@ public class ImageLoader {
             stream2.close();
             return bitmap;
         } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -180,10 +181,4 @@ public class ImageLoader {
                 photoToLoad.imageView.setImageResource(stub_id);
         }
     }
-
-    public void clearCache() {
-        memoryCache.clear();
-        fileCache.clear();
-    }
-
 }

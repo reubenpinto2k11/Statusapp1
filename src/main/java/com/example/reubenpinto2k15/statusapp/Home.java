@@ -121,13 +121,13 @@ public class Home extends Activity {
                 inputStream = httpResponse.getEntity().getContent();
                 if (inputStream != null) {
                     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-                    String line = "";
+                    String line;
                     while ((line = bufferedReader.readLine()) != null)
                         result += line;
                 } else
                     result = "ERROR";
 
-                JSONObject arryObject = null;
+                JSONObject arryObject;
                 try {
                     jsonObject = new JSONObject(result);
                     jsonArray = jsonObject.getJSONArray("members");
@@ -222,7 +222,7 @@ public class Home extends Activity {
         for(int i=0;i<temp;i++)
         {
             ArrayList<Object> dat=new ArrayList<Object>();
-            HashMap<String, String> map = new HashMap<String, String>();
+            HashMap<String, String> map;
             map=memberList.get(row);
             dat.add(i);
             dat.add(map.get("image"));
