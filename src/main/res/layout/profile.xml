@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#84ffff">
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:background="#84ffff"
+       >
+
+       <TextView
+           android:id="@+id/ethin"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Sample"
+           android:background="@drawable/greensquare_9_patch"
+           android:gravity="center_horizontal"
+           android:textSize="19sp"
+           android:textStyle="bold"
+           android:layout_centerHorizontal="true"
+           android:paddingTop="15dp"
+           android:layout_margin="5dp"/>
+
+       <ImageView
+           android:id="@+id/pic"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@id/ethin"
+           android:background="@drawable/btn_white_matte"
+           android:layout_marginLeft="5dp"
+
+           />
+
+       <ImageView
+           android:id="@+id/dob_pic"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/cake"
+           android:layout_below="@id/ethin"
+           android:layout_toRightOf="@id/pic"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="10dp"
+           android:scaleType="centerCrop"
+           />
+
+       <TextView
+           android:id="@+id/dob_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Birthday :"
+           android:layout_toRightOf="@id/dob_pic"
+           android:layout_below="@id/ethin"
+           android:gravity="center_horizontal"
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+           android:layout_margin="10dp"/>
+
+
+       <TextView
+           android:id="@+id/dob_date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="07-Dec-2015"
+           android:layout_below="@id/ethin"
+           android:layout_toRightOf="@id/dob_label"
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="10dp"
+           />
+
+       <ImageView
+           android:id="@+id/weight_pic"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/scale"
+           android:layout_below="@id/dob_pic"
+           android:layout_toRightOf="@id/pic"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="10dp"
+           android:scaleType="centerCrop"
+           />
+
+       <TextView
+           android:id="@+id/weight_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Weight :"
+           android:layout_toRightOf="@id/dob_pic"
+           android:layout_below="@id/dob_label"
+           android:gravity="center_horizontal"
+           android:layout_marginLeft="10dp"
+           android:layout_marginBottom="10dp"/>
+
+
+       <TextView
+           android:id="@+id/weight_data"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="26.57Kg"
+           android:layout_below="@id/dob_date"
+           android:layout_toRightOf="@id/dob_label"
+           android:layout_marginLeft="10dp"
+           android:paddingBottom="10dp"
+           android:layout_marginBottom="10dp"/>
+
+       <ImageView
+           android:id="@+id/ht_pic"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/height"
+           android:layout_below="@id/weight_pic"
+           android:layout_toRightOf="@id/pic"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="10dp"
+           android:scaleType="centerCrop"
+           />
+
+       <TextView
+           android:id="@+id/ht_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Height :"
+           android:layout_toRightOf="@id/ht_pic"
+           android:layout_below="@id/weight_label"
+           android:gravity="center_horizontal"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginBottom="10dp"/>
+
+
+       <TextView
+           android:id="@+id/ht_data"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="5 ' 9 ''"
+           android:layout_below="@id/weight_data"
+           android:layout_toRightOf="@id/ht_label"
+           android:layout_marginLeft="20dp"
+           android:layout_marginBottom="10dp"
+           />
+
+       <ImageView
+           android:id="@+id/veg_pic"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/veg"
+           android:layout_below="@id/ht_pic"
+           android:layout_toRightOf="@id/pic"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="10dp"
+           android:scaleType="centerCrop"
+           />
+
+       <TextView
+           android:id="@+id/veg_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Is Veg ?"
+           android:layout_toRightOf="@id/dob_pic"
+           android:layout_below="@id/ht_label"
+           android:gravity="center_horizontal"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="10dp"/>
+
+
+       <TextView
+           android:id="@+id/veg_data"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="No"
+           android:layout_below="@id/ht_data"
+           android:layout_toRightOf="@id/dob_label"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="20dp"/>
+
+       <ImageView
+           android:id="@+id/drink_pic"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/drink"
+           android:layout_below="@id/veg_pic"
+           android:layout_toRightOf="@id/pic"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="10dp"
+           android:scaleType="centerCrop"
+           />
+
+       <TextView
+           android:id="@+id/drink_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Drinks ?"
+           android:layout_toRightOf="@id/dob_pic"
+           android:layout_below="@id/veg_label"
+           android:gravity="center_horizontal"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="10dp"/>
+
+
+       <TextView
+           android:id="@+id/drink_data"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Yes"
+           android:layout_below="@id/veg_data"
+           android:layout_toRightOf="@id/dob_label"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="20dp"/>
+   </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="#Status:"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_white_matte"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:editable="false"
+        android:hint="Status Here....."
+        android:lines="3"
+        android:enabled="false" />
+</LinearLayout>
